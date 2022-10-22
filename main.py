@@ -1,4 +1,3 @@
-from email import message
 from fastapi import FastAPI, Request
 from twilio_client import client as twilio_client
 from pydantic import BaseModel
@@ -28,11 +27,6 @@ async def send_message(message: SendMessageIn):
 
 @app.post("/callback")
 async def callback(request: Request):
-    # message = {"to": "whatsapp:+5215582403665"}
-    message = {}
-    
-    for param in request.query_params:
-        message['body'] = param
-        print(message)
-    params = request.query_params
-    return {"message": params}
+    data = await request.json()
+    print(data)
+    return data
