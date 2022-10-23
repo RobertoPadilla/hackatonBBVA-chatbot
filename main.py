@@ -1,4 +1,5 @@
 import os
+from time import sleep
 from dotenv import load_dotenv
 import dialogflow
 import twiliolib
@@ -58,6 +59,7 @@ def bot():
             minutes = str(datetime.timedelta(seconds=location['seconds']))
             twiliolib.sendMessage(f"La {index} más cercana es: https://www.google.com/maps/search/?api=1&query={n_latitude}%2C{n_longitude}, queda a *{minutes}* de ti.", mobnum)
 
+        sleep(2)
         twiliolib.sendMessage("Espero haber sido útil. Muchas gracias por solicitar mi ayuda 🫢 byeee. 🫂", mobnum)
         return {"result": "success"}
 
