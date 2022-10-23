@@ -1,3 +1,5 @@
 __pycache__/
 venv/
 .env
+.ipynb_checkpoints
+hackaton-2022-atm-ea198af6ede3.json
