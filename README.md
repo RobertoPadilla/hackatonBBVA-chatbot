@@ -8,8 +8,13 @@ https://api.whatsapp.com/send?phone=14155238886
 
 Por ser entorno de desarrollo se necesita un paso adicional: el cual es suscribirse al entorno de pruebas de nuestro chatbot. Simplemente su primer mensaje deberá ser esta cadena: `join fox-unless`.
 
+O también podrás hacer todo en un mimsmo paso con la siguiente url: ⬇️
+https://api.whatsapp.com/send?phone=14155238886&text=join%20fox-unless
+
 ### Recapitulando:
-- **Primer paso:** enviar `join fox-unless` al chat-bot https://api.whatsapp.com/send?phone=14155238886
+- **Primer paso:**
+  - Enviar `join fox-unless` al chat-bot https://api.whatsapp.com/send?phone=14155238886
+  - O directamente esta url: https://api.whatsapp.com/send?phone=14155238886&text=join%20fox-unless
 - **Segundo paso:** saludar al bot 👋🏽
 
 ---
